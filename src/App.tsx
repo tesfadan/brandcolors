@@ -83,7 +83,7 @@ function App() {
   const [history, setHistory] = useState<ColorPalette[]>  ();
 
 
-  const handleSubmit = async (e)=>{
+  const handleSubmit = async (e: { preventDefault: () => void; })=>{
     e.preventDefault();
 
     const p = `${starterPrompt} ${input}.`;
