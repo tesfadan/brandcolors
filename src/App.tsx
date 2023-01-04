@@ -5,19 +5,19 @@ import { Configuration, OpenAIApi } from "openai";
 import { OPENAI_API_KEY} from "../secrets"
 
 
-const apiKey =()=>{
-  if (process.env.NODE_ENV === 'production') {
-    // the app is running in production mode
-    return process.env.OPENAI_API_KEY
-  } else {
-    // the app is running in development mode
-    return OPENAI_API_KEY
-  }
-}
+// const apiKey =()=>{
+//   if (process.env.NODE_ENV === 'production') {
+//     // the app is running in production mode
+//     return process.env.OPENAI_API_KEY
+//   } else {
+//     // the app is running in development mode
+//     return OPENAI_API_KEY
+//   }
+// }
 
 
 const configuration = new Configuration({
-  apiKey: apiKey(),
+  apiKey: process.env.OPENAI_API_KEY
 });
 
 
