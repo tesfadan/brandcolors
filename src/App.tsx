@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Configuration, OpenAIApi } from "openai";
-import { OPENAI_API_KEY} from "../secrets"
+// import { OPENAI_API_KEY} from "../secrets"
 
 
 // const apiKey =()=>{
